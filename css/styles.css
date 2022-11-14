@@ -1,0 +1,330 @@
+
+/*Inicio estilos index*/
+
+html{
+    margin: 0%;
+    padding: 0%;
+}
+
+img{
+    max-width: 100%;
+}
+
+body{
+    background-color: rgb(252, 246, 239);
+}
+
+header {
+    background-color: rgb(49, 130, 223);
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.navegacion{
+    list-style-type: none;
+    display: flex;
+    margin-right: 2.5rem;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+    font-size: 1.4rem;
+    color: white;
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+ul li a{
+    color: aliceblue;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+.logo{
+    width: 16rem;
+}
+
+.body__introduccion{
+    padding-top: 59rem;
+    padding-bottom: 0.5rem;
+    background-image: url(../img/Foto\ playa.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.body__introduccion-parrafo{
+    font-size: 3rem;
+    font-family: 'Shalimar', cursive;
+    text-decoration: solid;
+    position: absolute;
+    top: 11rem;
+    left: 3rem;
+    color: white;
+}
+
+/*especificos de seccion 1*/
+
+.seccion-1__titulo,.body__segunda-seccion-titulo,.body__tercer-seccion-titulo,.body__cuarta-seccion-titulo,.body__quinta-seccion-titulo,.servicios__segunda-seccion-titulo,.galeria__titulo{
+    color: rgb(63, 105, 221);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.seccion-1__parrafo,.seccion-1__parrafo-2,.seccion-2__parrafo,.seccion-2__parrafo-2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.seccion-1__parrafo-2{
+    margin-bottom: 2rem;
+}
+
+/*especificos de seccion 2*/
+
+.body__segunda-seccion{
+    background-color: rgb(235, 232, 232);
+}
+
+.seccion-2__parrafo-2{
+    margin-bottom: 2rem;
+}
+
+.seccion-2__lista,.parrafo-cuarta-seccion-intro{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+/*especificos de seccion 3*/
+
+.body__tercer-seccion{
+    background-color: rgb(220, 226, 245);
+    padding: 0rem 2rem 4rem 2rem;
+}
+
+.body__tercer-seccion-tabla{
+    width: 100%;
+    border-collapse: collapse;
+    border:rgb(49, 130, 223) solid;
+    border-color: blue;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+/*especificos de seccion 4*/
+
+.body__cuarta-seccion{
+    background-color: rgb(206, 206, 207);
+}
+
+.opinion{
+    border: 0.3rem solid rgb(68, 68, 68);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Fasthand', cursive;
+    font-size: 1.5rem;
+    color: rgb(44, 44, 44);
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*especificos de seccion 5*/
+
+.body__quinta-seccion{
+    background-color: antiquewhite;
+}
+
+/*Estilos del footer*/
+
+.body__footer{
+    background-color: rgb(69, 69, 70);
+    padding-left: 1rem;
+}
+
+.body__footer-redes{
+color: white;
+text-decoration: underline;
+font-size: 1.8rem;
+}
+
+.body__footer-facebook{
+    color: blue;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.body__footer-insta{
+    color: pink;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.body__footer-derechos-reservados{
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+  
+/*Fin de estilos index*/
+
+
+/*Inicio estilos formulario de contacto*/
+
+.formulario__seccion{
+    padding-top: 12rem;
+}
+
+.formulario__posicion{
+    text-align: center;
+    border: double black;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.formulario__titulo,.historia__titulo{
+    color: rgb(63, 105, 221);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+    text-align: center;    
+}
+
+.formulario__cuadro-1, .formulario__cuadro-2, .formulario__cuadro-3, .formulario__cuadro-4, .formulario__cuadro-5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.formulario__cuadro-1{
+    margin-top: 1rem;
+}
+
+.formulario__cuadro-4-botones{
+    padding: 0.7rem;
+}
+
+.formulario__cuadro-5{
+    text-align: center;
+}
+
+.formulario__cuadro-5-question{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Fin de estilos formulario de contacto*/
+
+/*Inicio de estilos servicios*/
+
+.servicios__primer-seccion-titulo{
+    padding-top: 11rem;
+    color: rgb(63, 105, 221);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+
+.servicios__primer-seccion{   
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.servicios__card1,.servicios__card2,.servicios__card3{
+    border: solid 0.5rem rgb(63, 120, 243);
+    width: 26rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.servicios__card1-titulo,.servicios__card2-titulo,.servicios__card3-titulo{
+    font-family: Arial;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.servicios__card1-parrafo,.servicios__card2-parrafo,.servicios__card3-parrafo{
+    font-family: Arial;
+    text-align: center;
+}
+
+.foto__carpas,.foto__pileta,.foto__morfi{
+    width: 20rem;
+    height: 15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.servicios__segunda-seccion-titulo{
+text-align: left;
+}
+
+.servicios__segunda-seccion-lista{
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+    color: grey;
+}
+
+/*Fin de estilos servicios*/
+
+/*Inicio de estilos galeria*/
+
+.galeria__primer-seccion{
+    padding-top: 10rem;
+}
+
+.galeria__titulo{
+    font-size: 3rem;
+}
+
+.galeria__caja-de-imagenes{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.galeria__caja-de-imagenes img{
+  height: 20rem; 
+  width: 20rem; 
+}
+
+/*Fin de estilos galeria*/
+
+/*Inicio de estilos galeria*/
+
+.historia__primer-seccion{
+    padding-top: 11rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    margin-bottom: 5rem;
+}
+
+.historia__texto{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.historia__imagenes{
+    width: 19rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Fin de estilos galeria*/

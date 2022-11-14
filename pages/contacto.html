@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/Isologo Ibiza (letra).png">
+    <title>Formulario de Contacto</title>
+</head>
+<body>
+
+    <header>
+        <div>
+            <img src="../img/Isologo Ibiza.png" alt="" class="logo">
+        </div>
+            <nav>
+                 <ul class="navegacion">
+                    <li><a href="../index.html">Inicio</a></li>
+                    <li><a href="../pages/servicios.html">Servicios</a></li>
+                    <li><a href="../pages/historia.html">Historia</a></li>
+                    <li><a href="../pages/galeria.html">Galeria</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="https://miramarense.com.ar/" target="_blank">Conocer Miramar</a></li>
+                </ul>
+            </nav>
+
+    </header>
+
+    <section class="formulario__seccion">
+    
+        <h1 class="formulario__titulo">Formulario de Contacto</h1>
+    
+        <form class="formulario__posicion">
+            
+            <fieldset>
+    
+                <div class="formulario__cuadro-1">
+                    <label for="nombre">Nombre y apellido</label>
+                    <input type="text" id="nombre" required>
+                </div>
+            
+                <div class="formulario__cuadro-2">
+                    <label for="email">Correo electronico</label>
+                    <input type="email" id="email" required>
+                </div>
+            
+                <div class="formulario__cuadro-3">
+                    <label for="contrasena">Ingresa tu contraseña</label>
+                    <input type="password" id="contrasena" required>
+                </div>
+        
+                <div class="formulario__cuadro-4">
+                    <label for="mensaje">Dejanos tu mensaje</label>
+                    <textarea id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+        
+                <div>
+                    <input class="formulario__cuadro-4-botones" type="submit" value="Enviar formulario">
+                    <input class="formulario__cuadro-4-botones" type="reset" value="Limpiar el formulario">
+                </div>
+        
+                <div class="formulario__cuadro-5">
+                    <p class="formulario__cuadro-5-question">¿Conoces Miramar?</p>
+        
+                    <label for="Si,¡siempre veraneo ahi!">Si,¡siempre veraneo ahi!</label>
+                    <input type="radio" name="opciones" id="Si,¡siempre veraneo ahi!">
+        
+                    <label for="No, nunca he ido">No, nunca he ido</label>
+                    <input type="radio" name="opciones" id="No, nunca he ido">
+        
+                    <label for="Ya quiero ir!!!!!">Ya quiero ir!!!!!</label>
+                    <input type="radio" name="opciones" id="Ya quiero ir!!!!!">
+                
+                </div>
+    
+            </fieldset>
+        </form>
+    </section>
+
+    <footer class="body__footer">
+        <p class="body__footer-redes">Nuestras redes sociales:</p>
+        <p class="body__footer-facebook">FB: BALNEARIO IBIZA MIRAMAR</p>
+        <p class="body__footer-insta">IG: @BALNEARIOIBIZAMIRAMAR</p>
+        <p class="body__footer-derechos-reservados">© 2022. BALNEARIO IBIZA. MIRAMAR.</p>
+    </footer>
+    
+</body>
+</html>
