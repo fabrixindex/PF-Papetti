@@ -4,14 +4,18 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="shortcut icon" href="img/Isologo Ibiza (letra).png">
     <title>Balneario Ibiza - Miramar</title>
 </head>
-<body>
-    <header>
+<body id="body-estructural">
+    <header id="header-pagina">
         <div>
-            <img src="../Proyecto/img/Isologo Ibiza.png" alt="" class="logo">
+            <img src="img/Isologo Ibiza.png" alt="" class="logo">
         </div>
             <nav>
                  <ul class="navegacion">
@@ -31,32 +35,50 @@
         </div>
     </section>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Shalimar&display=swap');
-    </style>
-
-    <section class="body__primer-seccion">
+    <section id="body__primer-seccion" class="container-fluid">
 <!--info del lugar - primera seccion -->
-<h1 class="seccion-1__titulo">BIENVENIDOS A BALNEARIO IBIZA</h1>
+<h1 id="seccion-1__titulo" class="animate__animated animate__bounce">BIENVENIDOS A BALNEARIO IBIZA</h1>
 <p class="seccion-1__parrafo">El Balneario esta ubicado sobre la Avenida Costanera, a tan solo 200 metros de las areas comerciales, ofrecemos un servicio de excelente calidad, brindando a nuestros veraneantes la calidez de nuestra gente, la belleza natural de nuestras playas, para garantizar unas felices y relajantes vacaciones.</p>
 <p class="seccion-1__parrafo-2">Miramar, una ciudad apacible, dedicada a los niños y la familia. Miramar dispone de una magnífica costa, con amplias playas de suave arena, que brindan todas las posibilidades para disfrutar del sol, la familia, los amigos y el mar.</p>
-    </section>
 
-    <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
-    </style>
+<div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/foto carousel 1.jpg" class="d-block w-100" alt="foto-1-carousel">
+      </div>
+      <div class="carousel-item">
+        <img src="img/foto carousel 2.jpg" class="d-block w-100" alt="foto-2-carousel">
+      </div>
+      <div class="carousel-item">
+        <img src="img/foto carousel 3.jpg" class="d-block w-100" alt="foto-3-carousel">
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
 
 <!--como llegar y ubicacion - segunda seccion -->
 
-<section class="body__segunda-seccion">
-    <h2 class="body__segunda-seccion-titulo">¿CÓMO LLEGAR?</h2>
-    <P class="seccion-2__parrafo">El Balneario Ibiza se encuentra ubicado en Miramar, Provincia de Buenos Aires, sobre la calle 12 N° 925</P>
-    <p class="seccion-2__parrafo-2">Miramar se encuentra ubicado en el sudeste de la Provincia de Buenos Aires (Latitud 38º 16' Sur, Longitud 57º 50' Oeste), a 450 Km. de la Ciudad Autónoma de Buenos Aires, por la ruta Provincial Nº 2; y a 45 Km. al Sur de Mar del Plata por la ruta Provincial Nº 11.</p>
+<section id="body__segunda-seccion" class="container-fluid">
+<h2 class="body__segunda-seccion-titulo">¿CÓMO LLEGAR?</h2>
+<P class="seccion-2__parrafo">El Balneario Ibiza se encuentra ubicado en Miramar, Provincia de Buenos Aires, sobre la calle 12 N° 925</P>
+<p class="seccion-2__parrafo-2">Miramar se encuentra ubicado en el sudeste de la Provincia de Buenos Aires (Latitud 38º 16' Sur, Longitud 57º 50' Oeste), a 450 Km. de la Ciudad Autónoma de Buenos Aires, por la ruta Provincial Nº 2; y a 45 Km. al Sur de Mar del Plata por la ruta Provincial Nº 11.</p>
 
 <ul class="seccion-2__lista">
-    <li>Desde el Norte: Por ruta Provincial Nº 2 y ruta Provincial Nº 11, y por Ferrocarril Ferrobaires</li>
-    <li>Desde el Sur: Por ruta Provincial Nº 88 y ruta Provincial Nº 77</li>
-    <li>Desde el Noroeste: Por ruta Provincial Nº 226 y rutas 11 y 88</li>
+<li>Desde el Norte: Por ruta Provincial Nº 2 y ruta Provincial Nº 11, y por Ferrocarril Ferrobaires</li>
+<li>Desde el Sur: Por ruta Provincial Nº 88 y ruta Provincial Nº 77</li>
+<li>Desde el Noroeste: Por ruta Provincial Nº 226 y rutas 11 y 88</li>
 </ul>
 
 <div>
@@ -65,12 +87,15 @@
 
 </section>
 
+
+</section>
+
 <!--horarios - tercera seccion-->
 
-<section class="body__tercer-seccion">
+<section id="body__tercer-seccion" class="container-fluid">
     <h3 class="body__tercer-seccion-titulo">CONOCE NUESTROS HORARIOS</h3>
 
-    <table class="body__tercer-seccion-tabla" border 1 cellpadding="20" cellspacing="15">
+    <table id="body__tercer-seccion-tabla" cellpadding="20" cellspacing="15">
         <th>LUNES</th>
         <th>MARTES</th>
         <th>MIERCOLES</th>
@@ -93,7 +118,7 @@
 
 <!--opinion de veraneantes - cuarta seccion-->
 
-<section class="body__cuarta-seccion">
+<section id="body__cuarta-seccion" class="container-fluid">
     <h4 class="body__cuarta-seccion-titulo">NUESTROS VERANEANTES</h4>
     <P class="parrafo-cuarta-seccion-intro">Conoce que opinan de nosotros los veraneantes que ya conocieron las intalaciones y los servicios del Balneario Ibiza:</P>
     <p class="opinion">"Excelente! Lo recomiendo! Preciosas las instalaciones. Siempre hay algo por hacer, desde disfrutar de una energica jornada en la sala de juegos hasta tomar una relajate sesion de jacuzzi. El personal excelente! y una fantastica ubicacion. Lo tiene todo!" - Esteban</p>
@@ -101,25 +126,33 @@
     <p class="opinion">"Pocos lugares tienen la magia que posee este lugar, sin dudas, uno de los mejores servicios que se puede encontrar en su tipo." - Franco</p>
 </section>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Fasthand&display=swap');
-</style>
-
 <!--paseo por la ciudad - quinta seccion-->
 
-<section class="body__quinta-seccion">
+<section id="body__quinta-seccion" class="container-fluid">
     <h5 class="body__quinta-seccion-titulo">¿Te gustaria dar un paseo por la ciudad?</h5>
     <iframe width="560" height="315" src="https://www.youtube.com/embed/_687S6_aaLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 </section>
 
 <!--footer - sexta seccion-->
 
-<footer class="body__footer">
+<footer id="body__footer" class="wow animate__animated animate__bounce">
     <p class="body__footer-redes">Nuestras redes sociales:</p>
     <p class="body__footer-facebook">FB: BALNEARIO IBIZA MIRAMAR</p>
     <p class="body__footer-insta">IG: @BALNEARIOIBIZAMIRAMAR</p>
     <p class="body__footer-derechos-reservados">© 2022. BALNEARIO IBIZA. MIRAMAR.</p>
 </footer>
+
+<!--librerias JS-->
+
+<script src="https://cdnjs.cloudflare.com//ajax/libs/wow/1.1.2/wow.min.js"></script>
+
+<script>
+    new WOW().init();
+</script>
+
+<!--script de bootstrap-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>
 </html>

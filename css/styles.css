@@ -10,8 +10,52 @@ img{
     max-width: 100%;
 }
 
-body{
+#body-estructural{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "intro intro intro"
+    "seccion1 seccion1 seccion1"
+    "seccion2 seccion2 seccion2"
+    "seccion3 seccion3 seccion3"
+    "seccion4 seccion4 seccion4"
+    "seccion5 seccion5 seccion5"
+    "footer footer footer";
+
+    grid-template-columns: repeat;
     background-color: rgb(252, 246, 239);
+}
+
+#header-pagina{
+    grid-area: header;
+}
+
+.body__introduccion{
+    grid-area: intro;
+}
+
+#body__primer-seccion{
+    grid-area: seccion1;
+}
+
+#body__segunda-seccion{
+    grid-area: seccion2;
+}
+
+#body__tercer-seccion{
+    grid-area: seccion3;   
+}
+
+#body__cuarta-seccion{
+    grid-area: seccion4;
+}
+
+#body__quinta-seccion{
+    grid-area: seccion5;
+}
+
+#body__footer{
+    grid-area: footer;
 }
 
 header {
@@ -24,14 +68,45 @@ header {
 .navegacion{
     list-style-type: none;
     display: flex;
-    margin-right: 2.5rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 0.5rem;
     font-size: 1.4rem;
     color: white;
     text-transform: uppercase;
     font-family: arial;
+}
+
+.navegacion, li {
+    transition: all .5s;
+    padding: .3rem;
+}
+
+.navegacion li:hover{
+    background-color: rgb(202, 217, 247);
+}
+
+@media screen and (max-width: 867px) {
+#header-pagina nav ul{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: block;
+    margin: auto;
+}
+
+.body__introduccion{
+    margin-top: 8rem;
+}
+
+.body__introduccion-parrafo{
+    margin-top: 10rem;
+}
+
 }
 
 ul li a{
@@ -43,6 +118,18 @@ ul li a{
 
 .logo{
     width: 16rem;
+    animation-duration:2s;
+    animation-name: aparecer;
+    animation-iteration-count: 1;
+}
+
+@keyframes aparecer{
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
 }
 
 .body__introduccion{
@@ -59,14 +146,19 @@ ul li a{
     font-family: 'Shalimar', cursive;
     text-decoration: solid;
     position: absolute;
-    top: 11rem;
+    top:12rem;
     left: 3rem;
     color: white;
+    font-family: 'Shalimar', cursive;
 }
 
 /*especificos de seccion 1*/
 
-.seccion-1__titulo,.body__segunda-seccion-titulo,.body__tercer-seccion-titulo,.body__cuarta-seccion-titulo,.body__quinta-seccion-titulo,.servicios__segunda-seccion-titulo,.galeria__titulo{
+#body__primer-seccion{
+    margin-top: 2rem;
+}
+
+#seccion-1__titulo,.body__segunda-seccion-titulo,.body__tercer-seccion-titulo,.body__cuarta-seccion-titulo,.body__quinta-seccion-titulo,.servicios__segunda-seccion-titulo,.galeria__titulo{
     color: rgb(63, 105, 221);
     font-size: 2rem;
     font-family: 'Roboto Slab', serif;
@@ -83,13 +175,21 @@ ul li a{
 }
 
 .seccion-1__parrafo-2{
-    margin-bottom: 2rem;
+    margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 840px) {
+    .body__primer-seccion{
+        font-size: .8rem;
+    }
 }
 
 /*especificos de seccion 2*/
 
-.body__segunda-seccion{
+#body__segunda-seccion{
     background-color: rgb(235, 232, 232);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
 }
 
 .seccion-2__parrafo-2{
@@ -102,26 +202,40 @@ ul li a{
     text-align: left;
 }
 
-/*especificos de seccion 3*/
-
-.body__tercer-seccion{
-    background-color: rgb(220, 226, 245);
-    padding: 0rem 2rem 4rem 2rem;
+@media screen and (max-width:840px){
+    .body__segunda-seccion{
+        font-size: .8rem;
+    }
 }
 
-.body__tercer-seccion-tabla{
+/*especificos de seccion 3*/
+
+#body__tercer-seccion{
+    background-color: rgb(220, 226, 245);
+    padding: 2.5rem 2rem 4rem 2rem;
+}
+
+#body__tercer-seccion-tabla{
     width: 100%;
     border-collapse: collapse;
-    border:rgb(49, 130, 223) solid;
+    border:rgb(8, 106, 219) solid;
     border-color: blue;
     font-size: 1.5rem;
     text-align: center;
 }
 
+@media screen and (max-width:840px) {
+    .body__tercer-seccion{
+        font-size: 1rem;
+    }
+}
+
 /*especificos de seccion 4*/
 
-.body__cuarta-seccion{
+#body__cuarta-seccion{
     background-color: rgb(206, 206, 207);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 .opinion{
@@ -135,15 +249,23 @@ ul li a{
     margin-right: 3rem;
 }
 
+@media screen and (max-width:840px) {
+    .body__cuarta-seccion{
+        font-size: 1rem;
+    }
+}
+
 /*especificos de seccion 5*/
 
-.body__quinta-seccion{
+#body__quinta-seccion{
     background-color: antiquewhite;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
 }
 
 /*Estilos del footer*/
 
-.body__footer{
+#body__footer{
     background-color: rgb(69, 69, 70);
     padding-left: 1rem;
 }
@@ -225,6 +347,25 @@ font-size: 1.8rem;
 
 /*Inicio de estilos servicios*/
 
+#estructural-servicios{
+    display: grid;
+    grid-template-areas: 
+    "card card card"
+    "lista lista lista"
+    "footer footer footer";
+
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+.sercicios__primer-seccion{
+    grid-area: card;
+}
+
+.servicios__segunda-seccion-lista{
+    grid-area: lista;
+}
+
 .servicios__primer-seccion-titulo{
     padding-top: 11rem;
     color: rgb(63, 105, 221);
@@ -234,16 +375,22 @@ font-size: 1.8rem;
     text-align: center;
 }
 
+@media screen and (max-width:840px) {
+    .servicios__primer-seccion-titulo{
+        padding-top: 17rem;
+    }    
+}
 
 .servicios__primer-seccion{   
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
 }
 
 .servicios__card1,.servicios__card2,.servicios__card3{
     border: solid 0.5rem rgb(63, 120, 243);
-    width: 26rem;
+    width: 23rem;
     margin-left: 0.8rem;
     margin-right: 0.8rem;
     padding-bottom: 1rem;
@@ -263,10 +410,22 @@ font-size: 1.8rem;
 }
 
 .foto__carpas,.foto__pileta,.foto__morfi{
-    width: 20rem;
+    width: 18rem;
     height: 15rem;
     padding-left: 1.5rem;
     padding-right: 1.5rem;
+}
+
+@media screen and (max-width:992px) {
+    .servicios__primer-seccion{
+        grid-template-columns: repeat(2, 2fr);
+    }   
+}
+
+@media screen and (max-width:552px) {
+    .servicios__primer-seccion{
+        grid-template-columns: repeat(1, 1fr);
+    }   
 }
 
 .servicios__segunda-seccion-titulo{
@@ -307,10 +466,11 @@ text-align: left;
 /*Inicio de estilos galeria*/
 
 .historia__primer-seccion{
-    padding-top: 11rem;
-    margin-left: 5rem;
-    margin-right: 5rem;
-    margin-bottom: 5rem;
+    padding: 11rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(to bottom, rgb(252, 246, 221), white);
 }
 
 .historia__texto{
