@@ -1,0 +1,83 @@
+/*Inicio de estilos servicios*/
+
+.sercicios__primer-seccion{
+    grid-area: card;
+}
+
+.servicios__segunda-seccion-lista{
+    grid-area: lista;
+}
+
+.servicios__primer-seccion-titulo{
+    padding-top: 11rem;
+    color: rgb(63, 105, 221);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media screen and (max-width:840px) {
+    .servicios__primer-seccion-titulo{
+        padding-top: 17rem;
+    }    
+}
+
+.servicios__primer-seccion{   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+.servicios__card1,.servicios__card2,.servicios__card3{
+    border: solid 0.5rem rgb(63, 120, 243);
+    width: 23rem;
+    margin-left: 0.8rem;
+    margin-right: 0.8rem;
+    padding-bottom: 1rem;
+}
+
+.servicios__card1-titulo,.servicios__card2-titulo,.servicios__card3-titulo{
+    font-family: Arial;
+    font-size: 1.4rem;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.servicios__card1-parrafo,.servicios__card2-parrafo,.servicios__card3-parrafo{
+    font-family: Arial;
+    text-align: center;
+}
+
+.foto__carpas,.foto__pileta,.foto__morfi{
+    width: 18rem;
+    height: 15rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@media screen and (max-width:992px) {
+    .servicios__primer-seccion{
+        grid-template-columns: repeat(2, 2fr);
+    }   
+}
+
+@media screen and (max-width:552px) {
+    .servicios__primer-seccion{
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}
+
+.servicios__segunda-seccion-titulo{
+text-align: left;
+}
+
+.servicios__segunda-seccion-lista{
+    font-size: 1.3rem;
+    font-family: 'Roboto Slab', serif;
+    color: grey;
+}
+
+/*Fin de estilos servicios*/

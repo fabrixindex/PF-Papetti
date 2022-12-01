@@ -1,0 +1,47 @@
+/*Inicio estilos formulario de contacto*/
+
+#formulario__seccion{
+    padding-top: 11.5rem;
+}
+
+.formulario__posicion{
+    text-align: center;
+    border: double black;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.formulario__titulo,.historia__titulo{
+    color: rgb(63, 105, 221);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+    text-align: center;    
+}
+
+.formulario__cuadro-1, .formulario__cuadro-2, .formulario__cuadro-3, .formulario__cuadro-4, .formulario__cuadro-5{
+    font-size: 1.3rem;
+    font-weight: bold;
+    font-family: 'Roboto Slab', serif;
+    text-align: left;
+    margin-top: 1.5rem;
+}
+
+.formulario__cuadro-1{
+    margin-top: 1rem;
+}
+
+.formulario__cuadro-4-botones{
+    padding: 0.7rem;
+}
+
+.formulario__cuadro-5{
+    text-align: center;
+}
+
+.formulario__cuadro-5-question{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/*Fin de estilos formulario de contacto*/

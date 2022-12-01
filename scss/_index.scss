@@ -1,0 +1,169 @@
+/*Inicio estilos index*/
+
+#body__introduccion{
+    padding-top: 11.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.fondito{
+    background-image: url("../img/fotoplaya.jpg")!important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    height: 500px;
+}
+
+.body__introduccion-parrafo{
+    font-size: 3rem;
+    font-family: 'Shalimar', cursive;
+    text-decoration: solid;
+    position: absolute;
+    top:12rem;
+    left: 3rem;
+    color: white;
+    font-family: 'Shalimar', cursive;
+}
+
+/*especificos de seccion 1*/
+
+#body__primer-seccion{
+    margin-top: 2rem;
+}
+
+#seccion-1__titulo,.body__segunda-seccion-titulo,.body__tercer-seccion-titulo,.body__cuarta-seccion-titulo,.body__quinta-seccion-titulo,.servicios__segunda-seccion-titulo,.galeria__titulo{
+    color: rgb(63, 105, 221);
+    font-size: 2rem;
+    font-family: 'Roboto Slab', serif;
+    text-decoration: underline;
+    text-align: center;
+}
+
+.seccion-1__parrafo,.seccion-1__parrafo-2,.seccion-2__parrafo,.seccion-2__parrafo-2{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding-left: 7rem;
+    padding-right: 7rem;
+}
+
+.seccion-1__parrafo-2{
+    margin-bottom: 6rem;
+}
+
+@media screen and (max-width: 840px) {
+    .body__primer-seccion{
+        font-size: .8rem;
+    }
+}
+
+/*especificos de seccion 2*/
+
+#body__segunda-seccion{
+    background-color: rgb(235, 232, 232);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.seccion-2__parrafo-2{
+    margin-bottom: 2rem;
+}
+
+.seccion-2__lista,.parrafo-cuarta-seccion-intro{
+    font-family: 'Roboto Slab', serif;
+    font-size: 1.2rem;
+    text-align: left;
+}
+
+@media screen and (max-width:840px){
+    .body__segunda-seccion{
+        font-size: .8rem;
+    }
+}
+
+/*especificos de seccion 3*/
+
+#body__tercer-seccion{
+    background-color: rgb(220, 226, 245);
+    padding: 2.5rem 2rem 4rem 2rem;
+}
+
+#body__tercer-seccion-tabla{
+    width: 100%;
+    border-collapse: collapse;
+    border:rgb(8, 106, 219) solid;
+    border-color: blue;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+@media screen and (max-width:840px) {
+    .body__tercer-seccion{
+        font-size: 1rem;
+    }
+}
+
+/*especificos de seccion 4*/
+
+#body__cuarta-seccion{
+    background-color: rgb(206, 206, 207);
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+.opinion{
+    border: 0.3rem solid rgb(68, 68, 68);
+    padding: 2rem;
+    text-align: center;
+    font-family: 'Fasthand', cursive;
+    font-size: 1.5rem;
+    color: rgb(44, 44, 44);
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+@media screen and (max-width:840px) {
+    .body__cuarta-seccion{
+        font-size: 1rem;
+    }
+}
+
+/*especificos de seccion 5*/
+
+#body__quinta-seccion{
+    background-color: antiquewhite;
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+}
+
+/*Estilos del footer*/
+
+#body__footer{
+    background-color: rgb(69, 69, 70);
+    padding-left: 1rem;
+}
+
+.body__footer-redes{
+color: white;
+text-decoration: underline;
+font-size: 1.8rem;
+}
+
+.body__footer-facebook{
+    color: blue;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.body__footer-insta{
+    color: pink;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.body__footer-derechos-reservados{
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+}
+  
+/*Fin de estilos index*/

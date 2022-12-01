@@ -1,0 +1,115 @@
+/*MAQUETADO INDEX*/
+
+#body-estructural{
+    display: grid;
+    grid-template-areas: 
+    "header header header"
+    "intro intro intro"
+    "seccion1 seccion1 seccion1"
+    "seccion2 seccion2 seccion2"
+    "seccion3 seccion3 seccion3"
+    "seccion4 seccion4 seccion4"
+    "seccion5 seccion5 seccion5"
+    "footer footer footer";
+
+    grid-template-columns: repeat;
+    background-color: rgb(252, 246, 239);
+}
+
+#header-pagina{
+    grid-area: header;
+}
+
+#body__introduccion{
+    grid-area: intro;
+}
+
+#body__primer-seccion{
+    grid-area: seccion1;
+}
+
+#body__segunda-seccion{
+    grid-area: seccion2;
+}
+
+#body__tercer-seccion{
+    grid-area: seccion3;   
+}
+
+#body__cuarta-seccion{
+    grid-area: seccion4;
+}
+
+#body__quinta-seccion{
+    grid-area: seccion5;
+}
+
+#body__footer{
+    grid-area: footer;
+}
+
+/*MAQUETADO SERVICIOS*/
+
+#estructural-servicios{
+    display: grid;
+    grid-template-areas: 
+    "card card card"
+    "lista lista lista"
+    "footer footer footer";
+
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+/*MAQUETADO CONTACTO*/
+
+#estructural-contacto{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "form form form"
+    "footer footer footer";
+    
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+#formulario__seccion{
+    grid-area: form;
+}
+
+/*MAQUETADO GALERIA*/
+
+#estructural-galeria{
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "galeria galeria galeria galeria"
+    "footer footer footer footer";
+    
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 2rem;
+}
+
+#galeria__primer-seccion{
+    grid-area: galeria;
+}
+
+/*MAQUETADO HISTORIA*/
+
+#estructural-historia{
+    display: grid;
+    grid-template-areas:
+    "header header header"
+    "historia historia historia"
+    "footer footer footer";
+    
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem;
+}
+
+#historia__primer-seccion{
+    grid-area: historia;
+}
+
+/*FIN DE MAQUETADO*/

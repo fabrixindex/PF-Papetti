@@ -1,0 +1,25 @@
+/*Inicio de estilos historia*/
+
+#historia__primer-seccion{
+    padding-top: 11.5rem;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    background-image: linear-gradient(to bottom, rgb(252, 246, 221), white);
+}
+
+.historia__texto{
+    font-family: 'Playfair Display', serif;
+    font-size: 1.1rem;
+    line-height: 2rem;
+    text-align: justify;
+}
+
+.historia__imagenes{
+    width: 19rem;
+    height: 15rem;
+    display: flex;
+    flex-direction: row;
+}
+
+/*Fin de estilos historia*/
