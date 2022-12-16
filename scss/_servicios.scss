@@ -1,36 +1,38 @@
 /*Inicio de estilos servicios*/
 
-.sercicios__primer-seccion{
+#sercicios__primer-seccion{
     grid-area: card;
 }
 
-.servicios__segunda-seccion-lista{
+#servicios__segunda-seccion-lista{
     grid-area: lista;
 }
 
-.servicios__primer-seccion-titulo{
-    padding-top: 11rem;
+.servicios__primer-seccion-titulo, .servicios__segunda-seccion-titulo{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
     color: rgb(63, 105, 221);
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: 'Roboto Slab', serif;
     text-decoration: underline;
     text-align: center;
 }
 
-@media screen and (max-width:840px) {
-    .servicios__primer-seccion-titulo{
-        padding-top: 17rem;
-    }    
+.servicios__segunda-seccion-titulo{
+    font-size: 2.5rem;
+    padding-top: 2rem;
+    margin-left: 1rem;
+    text-align: left;
 }
 
-.servicios__primer-seccion{   
+#servicios__primer-seccion{   
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     row-gap: 2rem;
 }
 
-.servicios__card1,.servicios__card2,.servicios__card3{
+#servicios__card1,#servicios__card2,#servicios__card3{
     border: solid 0.5rem rgb(63, 120, 243);
     width: 23rem;
     margin-left: 0.8rem;
@@ -39,7 +41,7 @@
 }
 
 .servicios__card1-titulo,.servicios__card2-titulo,.servicios__card3-titulo{
-    font-family: Arial;
+    font-family: 'Roboto Slab', serif;
     font-size: 1.4rem;
     font-weight: bold;
     text-align: center;
@@ -47,7 +49,7 @@
 }
 
 .servicios__card1-parrafo,.servicios__card2-parrafo,.servicios__card3-parrafo{
-    font-family: Arial;
+    font-family: 'Roboto Slab', serif;
     text-align: center;
 }
 
@@ -59,14 +61,16 @@
 }
 
 @media screen and (max-width:992px) {
-    .servicios__primer-seccion{
+    #servicios__primer-seccion{
         grid-template-columns: repeat(2, 2fr);
     }   
 }
 
 @media screen and (max-width:552px) {
-    .servicios__primer-seccion{
+    #servicios__primer-seccion{
         grid-template-columns: repeat(1, 1fr);
+        margin: 1rem 2rem 1rem 2rem;
+        font-size: 1rem;
     }   
 }
 
@@ -74,10 +78,18 @@
 text-align: left;
 }
 
-.servicios__segunda-seccion-lista{
-    font-size: 1.3rem;
-    font-family: 'Roboto Slab', serif;
-    color: grey;
+#servicios__segunda-seccion-lista{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    row-gap: 2rem;
+}
+
+@media screen and (max-width:552px) {
+    #servicios__segunda-seccion-lista{
+        grid-template-columns: repeat(1, 1fr);
+        margin: 1rem;
+    }   
 }
 
 /*Fin de estilos servicios*/

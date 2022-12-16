@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="keywords" content="miramar, playa, servicios, pileta, estacionamiento, juegos, relax">
     <meta name="description" content="Descubrí nuestra variedad de servicios y la comodidad de nuestras instaciones!">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Shalimar&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="shortcut icon" href="../img/Isologo Ibiza (letra).png">
     <title>Balneario Ibiza | Servicios</title>
@@ -14,29 +17,50 @@
 <body #estructural-servicios>
     
     <header id="header-pagina">
-        <div>
-            <img src="../img/Isologo Ibiza.png" alt="" class="logo">
+
+      <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-logo">
+            <div id="caja-logo-nav">
+              <img src="../img/Isologo Ibiza.png" alt="fondo" id="logo-nav">
+            </div>
+          </a>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a id="boton-nav" class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a id="boton-nav" class="nav-link" href="../pages/servicios.html">Servicios</a>
+              </li>
+              <li class="nav-item">
+                <a id="boton-nav" class="nav-link" href="../pages/historia.html">Historia</a>
+              </li>
+              <li class="nav-item">
+                <a id="boton-nav" class="nav-link" href="../pages/galeria.html">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a id="boton-nav" class="nav-link" href="../pages/contacto.html">Contacto</a>
+              </li>
+              <li class="nav-item">
+                <a id="boton-nav" class="nav-link" href="https://miramarense.com.ar/" target="_blank">Conocer Miramar</a>
+              </li>
+            </ul>
+          </div>
         </div>
-            <nav>
-                 <ul class="navegacion">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="servicios.html">Servicios</a></li>
-                    <li><a href="../pages/historia.html">Historia</a></li>
-                    <li><a href="../pages/galeria.html">Galeria</a></li>
-                    <li><a href="../pages/contacto.html">Contacto</a></li>
-                    <li><a href="https://miramarense.com.ar/" target="_blank">Conocer Miramar</a></li>
-                </ul>
-            </nav>
+
+      </nav>
 
     </header>
 
-    <section class="servicios__primer-seccion-titulo">
-        <h1>Conozca nuestros servicios</h1>
-    </section>
+    <h1 class="servicios__primer-seccion-titulo">Conozca nuestros servicios</h1>
 
-    <section class="servicios__primer-seccion">
+    <section id="servicios__primer-seccion">
 
-        <div class="servicios__card1">
+        <div id="servicios__card1" class="wow animate__animated animate__zoomIn">
 
             <p class="servicios__card1-titulo">Carpas y sombrillas</p>
             <p class="servicios__card1-parrafo">Cómodo, deseamos que se sienta a gusto y cómodo en nuestras unidades de sombra, por eso las pensamos grandes y con lo necesario para descansar en familia.</p>
@@ -47,7 +71,7 @@
             
         </div>
 
-        <div class="servicios__card2">
+        <div id="servicios__card2" class="wow animate__animated animate__zoomIn">
 
             <p class="servicios__card2-titulo">Piscina climatizada</p>
             <p class="servicios__card2-parrafo">En verano pocas cosas hay más gratificantes como darse un buen chapuzón, por eso nuestra piscina es una parte importande en nuestras instalaciones.</p>
@@ -58,7 +82,7 @@
             
         </div>
 
-        <div class="servicios__card3">
+        <div id="servicios__card3" class="wow animate__animated animate__zoomIn">
 
             <p class="servicios__card3-titulo">Resto Bar "Osvaldito"</p>
             <p class="servicios__card3-parrafo">Un desayuno por las mañanas, una colación o almorzar con platos de calidad a un precio accesible son metas que hemos logrado con el paso de las temporadas.</p>
@@ -71,29 +95,169 @@
 
     </section>
 
-    <section>
-        <h2 class="servicios__segunda-seccion-titulo">Todos nuestros servicios</h2>
-        <ul class="servicios__segunda-seccion-lista">
-            <li>Carpas</li>
-            <li>piscina</li>
-            <li>Playon de usos multiples</li>
-            <li>Resto Bar</li>
-            <li>Sombrillas</li>
-            <li>Jacuzzi</li>
-            <li>Estacionamiento</li>
-            <li>Wifi</li>
-            <li>Baños</li>
-            <li>Duchas en la playa</li>
-            <li>Quincho</li>
-        </ul>
+  <h2 class="servicios__segunda-seccion-titulo">Todos nuestros servicios</h2>
+  
+    <!--Inicio bolsa de tarjetas-->  
+    <section id="servicios__segunda-seccion-lista">
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/carpitas.jpg" class="img-fluid rounded-start" alt="carpitas">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Carpas</h5>
+              <p class="card-text">Protegerte de los fuertes rayos UV y el calor de nuestras playas es nuestra prioridad. ¡Nuestras carpas te permitirán tener una cómoda estadía!</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 15 minutos</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+  
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/salon-tarjeta.jpg" class="img-fluid rounded-start" alt="salon-tarjeta">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Salon de usos multiples</h5>
+              <p class="card-text">¿Necesitas festejar tu cumpleaños? ¿Una fecha especial? ¡Tenemos el espacio para que lo festejemos juntos!</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 1 semana</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/jacuzzi-tarjeta.jpg" class="img-fluid rounded-start" alt="Jacuzzi">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Jacuzzi</h5>
+              <p class="card-text">Las burbujas y el confort de nuestro Jacuzzi te hará olvidar todos tus problemas ¡Con solo 15 minutos estarás como nuevo!</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 1 semana</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/estacionamiento-tarjeta.jpg" class="img-fluid rounded-start" alt="Estacionamiento">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Estacionamiento</h5>
+              <p class="card-text">¿No sabes dónde dejar tu vehículo? No te preocupes, nuestras instalaciones cuentan con más de 50 espacios para vehículos de todos los tamaños.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 1 semana</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/internet-tarjeta.jpg" class="img-fluid rounded-start" alt="Wifi">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Wifi</h5>
+              <p class="card-text">Sabemos que es importante que siempre estés conectado, por eso podemos brindarte la posibilidad de una estable y optima conexión a internet.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 1 semana</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/quincho-tarjeta.jpg" class="img-fluid rounded-start" alt="quincho">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Quincho</h5>
+              <p class="card-text">Tenemos el mejor espacio para que puedas compartir ese esperado asadito con familia y amigos.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 1 semana</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/baños-tarjeta.jpg" class="img-fluid rounded-start" alt="baños-tarjeta">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Baños</h5>
+              <p class="card-text">Lujo, confort, higiene y estética. Nuestros baños cuentan con todo lo necesario para hacerte sentir como si estuvieras en casa.</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 1 semana</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-3" style="max-width: 540px;">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img src="../img/juegos-ninos.jpg" class="img-fluid rounded-start" alt="juegos-para-los-mas-pequeños">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body">
+              <h5 class="card-title">Juegos para los mas pequeños</h5>
+              <p class="card-text">Con nuestras atracciones para los más pequeños no hay lugar para el aburrimiento. ¡En Ibiza todos se divierten!</p>
+              <p class="card-text"><small class="text-muted">Última actualización hace 1 semana</small></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </section>
 
     <footer id="body__footer" class="wow animate__animated animate__bounce">
-        <p class="body__footer-redes">Nuestras redes sociales:</p>
-        <p class="body__footer-facebook">FB: BALNEARIO IBIZA MIRAMAR</p>
-        <p class="body__footer-insta">IG: @BALNEARIOIBIZAMIRAMAR</p>
-        <p class="body__footer-derechos-reservados">© 2022. BALNEARIO IBIZA. MIRAMAR.</p>
-    </footer>
+        <section>
+      
+          <div class="caja-png">
+            <figure>
+              <a href="#" class="logo-footer">
+                <img src="../img/Isologo_Ibiza-(sin-fondo).png" alt="ibiza">
+              </a>
+            </figure>
+          </div>
+      
+          <div class="grupo-1">
+            <p class="textito-principal-grupo-1">SOBRE NOSOTROS</p>
+            <P class="textito-secundario-grupo-1">Genuinos, capaces, amables y con la capacidad de garantizarte un merecido descanso y una comoda estadia. <br> Con el honor continuar siendo año a año el lugar de tus vacaciones.</P>
+          </div>
+      
+          <div class="grupo-1">
+            <P class="textito-redes">SIGUENOS EN NUESTRAS REDES</P>
+            <div class="red-social">
+              <a href="#" id="redes" class="fa fa-facebook"></a>
+              <a href="#" id="redes" class="fa fa-instagram"></a>
+              <a href="#" id="redes" class="fa fa-twitter"></a>
+              <a href="#" id="redes" class="fa fa-youtube"></a>
+              <a href="#" id="redes" class="fa fa-whatsapp"></a>
+            </div>
+          </div>
+        </section>
+      
+        <section class="grupo-2">
+          <small>© 2022. <b>BALNEARIO IBIZA. MIRAMAR.</b> - Todos los derechos reservados</small>
+        </section>
+      </footer>
+      
+<!--libreria de iconos-->
+      
+<script src="https://kit.fontawesome.com/fe5b784a37.js" crossorigin="anonymous"></script>
 
 <!--librerias JS-->
 
@@ -102,6 +266,10 @@
 <script>
     new WOW().init();
 </script>
+
+<!--script de bootstrap-->
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 
 </body>
 </html>

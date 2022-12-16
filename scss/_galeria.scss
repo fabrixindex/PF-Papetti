@@ -1,20 +1,22 @@
 /*Inicio de estilos galeria*/
 
-#galeria__primer-seccion{
-    padding-top: 11.5rem;
+#estructural-galeria{
+    background-color: whitesmoke;
 }
 
 .galeria__titulo{
     font-size: 3rem;
 }
 
-.galeria__caja-de-imagenes{
+#galeria__caja-de-imagenes{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    align-items: center;
+    padding: 1.5rem;
 }
 
-.galeria__caja-de-imagenes img{
+#galeria__caja-de-imagenes img{
   height: 20rem; 
   width: 20rem; 
 }

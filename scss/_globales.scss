@@ -7,67 +7,13 @@ img{
     max-width: 100%;
 }
 
-header {
-    background-color: rgb(49, 130, 223);
-    width: 100%;
-    position: fixed;
-    z-index: 1;
-}
-
-.navegacion{
-    list-style-type: none;
-    display: flex;
-    margin-right: 1rem;
-    margin-left: 1rem;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 1.4rem;
-    color: white;
-    text-transform: uppercase;
-    font-family: arial;
-}
-
-.navegacion, li {
-    transition: all .5s;
-    padding: .3rem;
-}
-
-.navegacion li:hover{
-    background-color: rgb(202, 217, 247);
-}
-
-@media screen and (max-width: 867px) {
-#header-pagina nav ul{
-    @include flex-colum-centrado
-}
-
-.logo{
-    display: block;
-    margin: auto;
-}
-
-.body__introduccion{
-    margin-top: 8rem;
-}
-
-.body__introduccion-parrafo{
-    margin-top: 10rem;
-}
-
-}
-
-ul li a{
-    color: aliceblue;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-family: arial;
-}
-
-.logo{
-    width: 16rem;
+#logo-nav{
+    width: 10rem;
+    height: 4.5rem;
     animation-duration:2s;
     animation-name: aparecer;
     animation-iteration-count: 1;
+    margin: auto;
 }
 
 @keyframes aparecer{
@@ -77,5 +23,18 @@ ul li a{
     100%{
         opacity: 1;
     }
+} 
+
+#boton-nav{
+    color: white;
+    font-family: 'Roboto Slab';
+    font-size: 1.4rem;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+    transition: all .5s;
 }
 
+#boton-nav:hover{
+    background-color: rgb(202, 217, 247);
+    color: aqua;
+}
